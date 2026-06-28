@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "trigger:dev": "bunx trigger.dev@latest dev",
+    "db:push": "drizzle-kit push"
   },
   "dependencies": {
     "@google/genai": "^2.10.0",
@@ -14,7 +16,7 @@
     "@supabase/ssr": "^0.12.0",
     "@supabase/supabase-js": "^2.108.2",
     "@tavily/core": "^0.7.6",
-    "@trigger.dev/sdk": "^4.4.6",
+    "@trigger.dev/sdk": "4.4.6",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "drizzle-orm": "^0.45.2",
@@ -32,6 +34,7 @@
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
+    "@trigger.dev/cli": "4.4.6",
     "@types/node": "^20",
     "@types/pg": "^8.20.0",
     "@types/react": "^19",
